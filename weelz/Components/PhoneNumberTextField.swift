@@ -82,7 +82,7 @@ struct PhoneNumberTextField: View {
                 }
                 .frame(width: 70, height: 55)
                 .padding(.horizontal, 6)
-                .background(.wzSecondary.opacity(0.4))
+                .background(.regularMaterial)
                 .cornerRadius(10, corners: [.bottomLeft, .topLeft])
                 
                 TextField("Phone number", text: maskedPhoneNumber)
@@ -93,7 +93,7 @@ struct PhoneNumberTextField: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: 55, alignment: .leading)
-            .background(.wzSecondary.opacity(0.4))
+            .background(.regularMaterial)
             .cornerRadius(10)
         }
         
