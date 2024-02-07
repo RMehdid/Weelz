@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044975482B7234E600685B7B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975472B7234E600685B7B /* Color.swift */; };
+		0449754C2B7239DC00685B7B /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449754B2B7239DC00685B7B /* PhoneNumberTextField.swift */; };
+		0449754E2B723A8E00685B7B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449754D2B723A8E00685B7B /* String.swift */; };
+		044975512B723C1800685B7B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975502B723C1800685B7B /* UIApplication.swift */; };
+		044975532B7364F000685B7B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975522B7364F000685B7B /* LoginView.swift */; };
+		044975572B7365A200685B7B /* WeelzButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975562B7365A200685B7B /* WeelzButtonStyle.swift */; };
+		044975592B7368F900685B7B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975582B7368F900685B7B /* View.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044975472B7234E600685B7B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		0449754B2B7239DC00685B7B /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		0449754D2B723A8E00685B7B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		044975502B723C1800685B7B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		044975522B7364F000685B7B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		044975562B7365A200685B7B /* WeelzButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeelzButtonStyle.swift; sourceTree = "<group>"; };
+		044975582B7368F900685B7B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044975492B7234E900685B7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				044975472B7234E600685B7B /* Color.swift */,
+				0449754D2B723A8E00685B7B /* String.swift */,
+				044975502B723C1800685B7B /* UIApplication.swift */,
+				044975582B7368F900685B7B /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		046C46B22B722EDF005C04D1 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +85,9 @@
 				046C46C42B722EE1005C04D1 /* Assets.xcassets */,
 				046C46C62B722EE1005C04D1 /* weelz.entitlements */,
 				046C46C72B722EE1005C04D1 /* Preview Content */,
+				046C46D12B722FA1005C04D1 /* Components */,
+				044975492B7234E900685B7B /* Extensions */,
+				044975522B7364F000685B7B /* LoginView.swift */,
 			);
 			path = weelz;
 			sourceTree = "<group>";
@@ -70,6 +98,15 @@
 				046C46C82B722EE1005C04D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		046C46D12B722FA1005C04D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0449754B2B7239DC00685B7B /* PhoneNumberTextField.swift */,
+				044975562B7365A200685B7B /* WeelzButtonStyle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044975512B723C1800685B7B /* UIApplication.swift in Sources */,
 				046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */,
+				044975592B7368F900685B7B /* View.swift in Sources */,
 				046C46C32B722EDF005C04D1 /* Item.swift in Sources */,
+				0449754C2B7239DC00685B7B /* PhoneNumberTextField.swift in Sources */,
+				0449754E2B723A8E00685B7B /* String.swift in Sources */,
+				044975482B7234E600685B7B /* Color.swift in Sources */,
+				044975532B7364F000685B7B /* LoginView.swift in Sources */,
+				044975572B7365A200685B7B /* WeelzButtonStyle.swift in Sources */,
 				046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
