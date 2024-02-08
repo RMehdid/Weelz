@@ -21,7 +21,8 @@ struct CarTitleRow: View {
             
             Image(systemName: "star.fill")
                 .resizable()
-                .frame(width: 24, height: 24)
+                .scaledToFit()
+                .frame(width: 24)
             Text("4.5")
                 .font(.system(size: 20, weight: .regular))
         }
