@@ -21,6 +21,7 @@
 		0449756C2B73971B00685B7B /* SwipableButton in Frameworks */ = {isa = PBXBuildFile; productRef = 0449756B2B73971B00685B7B /* SwipableButton */; };
 		0449756E2B74C01E00685B7B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449756D2B74C01E00685B7B /* TabBar.swift */; };
 		044975702B74CED600685B7B /* OwnerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449756F2B74CED600685B7B /* OwnerRow.swift */; };
+		044975722B74D36C00685B7B /* CarTitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975712B74D36C00685B7B /* CarTitleRow.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -42,6 +43,7 @@
 		044975682B73964900685B7B /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
 		0449756D2B74C01E00685B7B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0449756F2B74CED600685B7B /* OwnerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerRow.swift; sourceTree = "<group>"; };
+		044975712B74D36C00685B7B /* CarTitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTitleRow.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				044975682B73964900685B7B /* SlideButton.swift */,
 				0449756D2B74C01E00685B7B /* TabBar.swift */,
 				0449756F2B74CED600685B7B /* OwnerRow.swift */,
+				044975712B74D36C00685B7B /* CarTitleRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				0449754C2B7239DC00685B7B /* PhoneNumberTextField.swift in Sources */,
 				0449754E2B723A8E00685B7B /* String.swift in Sources */,
 				044975672B737C8300685B7B /* OTPViewModel.swift in Sources */,
+				044975722B74D36C00685B7B /* CarTitleRow.swift in Sources */,
 				044975692B73964900685B7B /* SlideButton.swift in Sources */,
 				044975652B737C7900685B7B /* OTPView.swift in Sources */,
 				0449756E2B74C01E00685B7B /* TabBar.swift in Sources */,
