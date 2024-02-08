@@ -25,6 +25,7 @@
 		044975742B74D48400685B7B /* CarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975732B74D48400685B7B /* CarCard.swift */; };
 		044975762B74DEC300685B7B /* CarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975752B74DEC300685B7B /* CarRow.swift */; };
 		044975782B74E1BE00685B7B /* DocumentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975772B74E1BE00685B7B /* DocumentRow.swift */; };
+		0449757A2B74FB7900685B7B /* ViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975792B74FB7900685B7B /* ViewTitle.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -50,6 +51,7 @@
 		044975732B74D48400685B7B /* CarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCard.swift; sourceTree = "<group>"; };
 		044975752B74DEC300685B7B /* CarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRow.swift; sourceTree = "<group>"; };
 		044975772B74E1BE00685B7B /* DocumentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRow.swift; sourceTree = "<group>"; };
+		044975792B74FB7900685B7B /* ViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTitle.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				044975732B74D48400685B7B /* CarCard.swift */,
 				044975752B74DEC300685B7B /* CarRow.swift */,
 				044975772B74E1BE00685B7B /* DocumentRow.swift */,
+				044975792B74FB7900685B7B /* ViewTitle.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				0449754E2B723A8E00685B7B /* String.swift in Sources */,
 				044975672B737C8300685B7B /* OTPViewModel.swift in Sources */,
 				044975762B74DEC300685B7B /* CarRow.swift in Sources */,
+				0449757A2B74FB7900685B7B /* ViewTitle.swift in Sources */,
 				044975722B74D36C00685B7B /* CarTitleRow.swift in Sources */,
 				044975692B73964900685B7B /* SlideButton.swift in Sources */,
 				044975652B737C7900685B7B /* OTPView.swift in Sources */,
