@@ -24,6 +24,7 @@
 		044975722B74D36C00685B7B /* CarTitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975712B74D36C00685B7B /* CarTitleRow.swift */; };
 		044975742B74D48400685B7B /* CarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975732B74D48400685B7B /* CarCard.swift */; };
 		044975762B74DEC300685B7B /* CarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975752B74DEC300685B7B /* CarRow.swift */; };
+		044975782B74E1BE00685B7B /* DocumentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975772B74E1BE00685B7B /* DocumentRow.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -48,6 +49,7 @@
 		044975712B74D36C00685B7B /* CarTitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTitleRow.swift; sourceTree = "<group>"; };
 		044975732B74D48400685B7B /* CarCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCard.swift; sourceTree = "<group>"; };
 		044975752B74DEC300685B7B /* CarRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRow.swift; sourceTree = "<group>"; };
+		044975772B74E1BE00685B7B /* DocumentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRow.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				044975712B74D36C00685B7B /* CarTitleRow.swift */,
 				044975732B74D48400685B7B /* CarCard.swift */,
 				044975752B74DEC300685B7B /* CarRow.swift */,
+				044975772B74E1BE00685B7B /* DocumentRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				044975512B723C1800685B7B /* UIApplication.swift in Sources */,
 				046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */,
 				044975592B7368F900685B7B /* View.swift in Sources */,
+				044975782B74E1BE00685B7B /* DocumentRow.swift in Sources */,
 				046C46C32B722EDF005C04D1 /* Item.swift in Sources */,
 				0449754C2B7239DC00685B7B /* PhoneNumberTextField.swift in Sources */,
 				0449754E2B723A8E00685B7B /* String.swift in Sources */,
