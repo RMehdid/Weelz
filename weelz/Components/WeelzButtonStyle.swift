@@ -20,3 +20,14 @@ struct WeelzButtonStyle: ButtonStyle {
         .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }
+
+struct WeelzSmallButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(width: 38, height: 38)
+            .background(.wzSecondary)
+            .foregroundStyle(.primary)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .frame(width: 62, height: 62)
+    }
+}

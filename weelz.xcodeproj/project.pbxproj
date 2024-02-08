@@ -15,9 +15,12 @@
 		044975572B7365A200685B7B /* WeelzButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975562B7365A200685B7B /* WeelzButtonStyle.swift */; };
 		044975592B7368F900685B7B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975582B7368F900685B7B /* View.swift */; };
 		0449755B2B736FF300685B7B /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449755A2B736FF300685B7B /* OTPField.swift */; };
-		0449755D2B737A1100685B7B /* OTPFieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449755C2B737A1100685B7B /* OTPFieldModel.swift */; };
 		044975652B737C7900685B7B /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975642B737C7900685B7B /* OTPView.swift */; };
 		044975672B737C8300685B7B /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975662B737C8300685B7B /* OTPViewModel.swift */; };
+		044975692B73964900685B7B /* SlideButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975682B73964900685B7B /* SlideButton.swift */; };
+		0449756C2B73971B00685B7B /* SwipableButton in Frameworks */ = {isa = PBXBuildFile; productRef = 0449756B2B73971B00685B7B /* SwipableButton */; };
+		0449756E2B74C01E00685B7B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449756D2B74C01E00685B7B /* TabBar.swift */; };
+		044975702B74CED600685B7B /* OwnerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449756F2B74CED600685B7B /* OwnerRow.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -34,9 +37,11 @@
 		044975562B7365A200685B7B /* WeelzButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeelzButtonStyle.swift; sourceTree = "<group>"; };
 		044975582B7368F900685B7B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		0449755A2B736FF300685B7B /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
-		0449755C2B737A1100685B7B /* OTPFieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPFieldModel.swift; sourceTree = "<group>"; };
 		044975642B737C7900685B7B /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		044975662B737C8300685B7B /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		044975682B73964900685B7B /* SlideButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideButton.swift; sourceTree = "<group>"; };
+		0449756D2B74C01E00685B7B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0449756F2B74CED600685B7B /* OwnerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerRow.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0449756C2B73971B00685B7B /* SwipableButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,15 +72,6 @@
 				044975582B7368F900685B7B /* View.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0449755E2B737A1800685B7B /* OTP */ = {
-			isa = PBXGroup;
-			children = (
-				0449755A2B736FF300685B7B /* OTPField.swift */,
-				0449755C2B737A1100685B7B /* OTPFieldModel.swift */,
-			);
-			path = OTP;
 			sourceTree = "<group>";
 		};
 		0449755F2B737BEE00685B7B /* Views */ = {
@@ -164,7 +161,10 @@
 			children = (
 				0449754B2B7239DC00685B7B /* PhoneNumberTextField.swift */,
 				044975562B7365A200685B7B /* WeelzButtonStyle.swift */,
-				0449755E2B737A1800685B7B /* OTP */,
+				0449755A2B736FF300685B7B /* OTPField.swift */,
+				044975682B73964900685B7B /* SlideButton.swift */,
+				0449756D2B74C01E00685B7B /* TabBar.swift */,
+				0449756F2B74CED600685B7B /* OwnerRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,6 +185,9 @@
 			dependencies = (
 			);
 			name = weelz;
+			packageProductDependencies = (
+				0449756B2B73971B00685B7B /* SwipableButton */,
+			);
 			productName = weelz;
 			productReference = 046C46BB2B722EDF005C04D1 /* weelz.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 046C46B22B722EDF005C04D1;
+			packageReferences = (
+				0449756A2B73971B00685B7B /* XCRemoteSwiftPackageReference "SwipableButton" */,
+			);
 			productRefGroup = 046C46BC2B722EDF005C04D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -246,12 +252,14 @@
 				0449754C2B7239DC00685B7B /* PhoneNumberTextField.swift in Sources */,
 				0449754E2B723A8E00685B7B /* String.swift in Sources */,
 				044975672B737C8300685B7B /* OTPViewModel.swift in Sources */,
+				044975692B73964900685B7B /* SlideButton.swift in Sources */,
 				044975652B737C7900685B7B /* OTPView.swift in Sources */,
+				0449756E2B74C01E00685B7B /* TabBar.swift in Sources */,
 				0449755B2B736FF300685B7B /* OTPField.swift in Sources */,
 				044975482B7234E600685B7B /* Color.swift in Sources */,
+				044975702B74CED600685B7B /* OwnerRow.swift in Sources */,
 				044975532B7364F000685B7B /* PhoneView.swift in Sources */,
 				044975572B7365A200685B7B /* WeelzButtonStyle.swift in Sources */,
-				0449755D2B737A1100685B7B /* OTPFieldModel.swift in Sources */,
 				046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +479,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0449756A2B73971B00685B7B /* XCRemoteSwiftPackageReference "SwipableButton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RMehdid/SwipableButton.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0449756B2B73971B00685B7B /* SwipableButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0449756A2B73971B00685B7B /* XCRemoteSwiftPackageReference "SwipableButton" */;
+			productName = SwipableButton;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 046C46B32B722EDF005C04D1 /* Project object */;
 }

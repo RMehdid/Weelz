@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swipablebutton",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RMehdid/SwipableButton.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "dde50a333bff1ec91bedbb400ebd7063875cac0c"
+      }
+    }
+  ],
+  "version" : 2
+}
