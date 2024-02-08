@@ -14,7 +14,7 @@ struct WeelzButtonStyle: ButtonStyle {
             configuration.label
             Spacer()
         }
-        .padding()
+        .frame(height: 68)
         .background(.wzRed)
         .foregroundStyle(.white)
         .clipShape(RoundedRectangle(cornerRadius: 8))

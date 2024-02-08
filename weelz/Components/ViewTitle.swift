@@ -24,6 +24,8 @@ struct ViewTitle: View {
                 
                 Text(title)
                     .font(.system(size: 24, weight: .semibold))
+                
+                Spacer()
             }
         }
         .foregroundStyle(.primary)
