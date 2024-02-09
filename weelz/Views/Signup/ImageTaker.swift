@@ -23,11 +23,8 @@ struct ImageTaker: View {
                     Text("Please respect the borders")
                         .font(.system(size: 24, weight: .semibold))
                     
-                    Button {
+                    Button("Upload") {
                         //
-                    } label: {
-                        Text("Upload")
-                            .font(.system(size: 32, weight: .medium))
                     }
                     .buttonStyle(WeelzButtonStyle())
                 }
@@ -45,7 +42,7 @@ struct ImageTaker: View {
                         .background(Color.white)
                         .clipShape(Circle())
                 }
-                .foregroundStyle(.primary)
+                .foregroundStyle(.black)
                 .shadow(radius: 4, x: 1, y: 4)
                 .padding(.top, -26)
             }

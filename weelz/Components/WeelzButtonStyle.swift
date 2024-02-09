@@ -12,6 +12,7 @@ struct WeelzButtonStyle: ButtonStyle {
         HStack{
             Spacer()
             configuration.label
+                .font(.system(size: 24, weight: .medium))
             Spacer()
         }
         .frame(height: 68)
