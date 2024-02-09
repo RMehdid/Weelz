@@ -41,7 +41,7 @@ struct ImageTakerView: View {
                 .cornerRadius(28, corners: [.topLeft, .topRight])
                 
                 Button {
-                    //
+                    self.uiState = .success("success")
                 } label: {
                     Image(systemName: "arrow.counterclockwise")
                         .renderingMode(.template)
