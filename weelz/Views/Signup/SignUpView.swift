@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SignUpView: View {
+    
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 64){
             ViewTitle(title: "Upload Documents")
@@ -16,21 +19,23 @@ struct SignUpView: View {
                 
                 DocumentRow(
                     title: "Take a picture of your drivers license",
-                    iconTitle: "person.text.rectangle.fill"
-                ) { result in
-                    debugPrint(result)
-                }
+                    iconTitle: "person.text.rectangle.fill",
+                    uiState: $viewModel.driversLicenseUiState
+                )
                 
                 DocumentRow(
                     title: "Take a picture of your passport",
-                    iconTitle: "wallet.pass.fill"
-                ) { result in
-                    debugPrint(result)
-                }
-                
+                    iconTitle: "wallet.pass.fill",
+                    uiState: $viewModel.passportUiState
+                )
             }
             
             Spacer()
+            
+            Button("Continue") {
+                viewModel.signup()
+            }
+            .buttonStyle(WeelzButtonStyle())
         }
         .padding()
         .background(Color.wzPrimary)

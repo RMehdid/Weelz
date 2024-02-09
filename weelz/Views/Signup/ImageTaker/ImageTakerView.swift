@@ -1,5 +1,5 @@
 //
-//  ImageTaker.swift
+//  ImageTakerView.swift
 //  weelz
 //
 //  Created by Samy Mehdid on 8/2/2024.
@@ -7,7 +7,14 @@
 
 import SwiftUI
 
-struct ImageTaker: View {
+struct ImageTakerView: View {
+    
+    @Binding var uiState: UiState<String>
+    
+    init(_ uiState: Binding<UiState<String>>) {
+        self._uiState = uiState
+    }
+    
     var body: some View {
         VStack{
             ViewTitle(title: "Take a picture")
@@ -51,5 +58,5 @@ struct ImageTaker: View {
 }
 
 #Preview {
-    ImageTaker()
+    ImageTakerView(.constant(.idle))
 }

@@ -11,18 +11,20 @@ struct DocumentRow: View {
     private let title: String
     private let iconTitle: String
     
-    private let uploadSuccess: (String) -> Void
+    @StateObject var viewModel = ViewModel()
     
-    init(title: String, iconTitle: String, uploadSuccess: @escaping (String) -> Void) {
+    @Binding var uiState: UiState<String>
+    
+    init(title: String, iconTitle: String, uiState: Binding<UiState<String>>) {
         self.title = title
         self.iconTitle = iconTitle
-        self.uploadSuccess = uploadSuccess
+        self._uiState = uiState
     }
     
     var body: some View {
         
         NavigationLink {
-            ImageTaker()
+            ImageTakerView(self.$uiState)
         } label: {
             HStack {
                 Image(systemName: iconTitle)
@@ -47,7 +49,15 @@ struct DocumentRow: View {
 }
 
 #Preview {
-    DocumentRow(title: "Take a picture of your drivers license", iconTitle: "person.text.rectangle.fill") { result in
-        debugPrint(result)
+    DocumentRow(
+        title: "Take a picture of your drivers license",
+        iconTitle: "person.text.rectangle.fill",
+        uiState: .constant(.idle)
+    )
+}
+
+extension DocumentRow {
+    @MainActor class ViewModel: ObservableObject {
+        
     }
 }

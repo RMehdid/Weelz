@@ -27,8 +27,10 @@
 		044975782B74E1BE00685B7B /* DocumentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975772B74E1BE00685B7B /* DocumentRow.swift */; };
 		0449757A2B74FB7900685B7B /* ViewTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975792B74FB7900685B7B /* ViewTitle.swift */; };
 		0449757C2B74FCC400685B7B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449757B2B74FCC400685B7B /* SignUpView.swift */; };
-		044975802B7500FE00685B7B /* ImageTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449757F2B7500FE00685B7B /* ImageTaker.swift */; };
+		044975802B7500FE00685B7B /* ImageTakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449757F2B7500FE00685B7B /* ImageTakerView.swift */; };
 		044975822B750E3400685B7B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975812B750E3400685B7B /* WelcomeView.swift */; };
+		044975882B76CF5300685B7B /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975872B76CF5300685B7B /* UiState.swift */; };
+		0449758A2B76D3CE00685B7B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044975892B76D3CE00685B7B /* SignUpViewModel.swift */; };
 		046C46BF2B722EDF005C04D1 /* weelzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46BE2B722EDF005C04D1 /* weelzApp.swift */; };
 		046C46C12B722EDF005C04D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C02B722EDF005C04D1 /* ContentView.swift */; };
 		046C46C32B722EDF005C04D1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C46C22B722EDF005C04D1 /* Item.swift */; };
@@ -56,8 +58,10 @@
 		044975772B74E1BE00685B7B /* DocumentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRow.swift; sourceTree = "<group>"; };
 		044975792B74FB7900685B7B /* ViewTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTitle.swift; sourceTree = "<group>"; };
 		0449757B2B74FCC400685B7B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		0449757F2B7500FE00685B7B /* ImageTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTaker.swift; sourceTree = "<group>"; };
+		0449757F2B7500FE00685B7B /* ImageTakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTakerView.swift; sourceTree = "<group>"; };
 		044975812B750E3400685B7B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		044975872B76CF5300685B7B /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
+		044975892B76D3CE00685B7B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		046C46BB2B722EDF005C04D1 /* weelz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weelz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C46BE2B722EDF005C04D1 /* weelzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weelzApp.swift; sourceTree = "<group>"; };
 		046C46C02B722EDF005C04D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,8 +116,9 @@
 		044975612B737BFF00685B7B /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				0449757F2B7500FE00685B7B /* ImageTaker.swift */,
+				044975832B76CE9400685B7B /* ImageTaker */,
 				0449757B2B74FCC400685B7B /* SignUpView.swift */,
+				044975892B76D3CE00685B7B /* SignUpViewModel.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -135,6 +140,22 @@
 			path = OTP;
 			sourceTree = "<group>";
 		};
+		044975832B76CE9400685B7B /* ImageTaker */ = {
+			isa = PBXGroup;
+			children = (
+				0449757F2B7500FE00685B7B /* ImageTakerView.swift */,
+			);
+			path = ImageTaker;
+			sourceTree = "<group>";
+		};
+		044975862B76CF4400685B7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				044975872B76CF5300685B7B /* UiState.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		046C46B22B722EDF005C04D1 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +175,7 @@
 		046C46BD2B722EDF005C04D1 /* weelz */ = {
 			isa = PBXGroup;
 			children = (
+				044975862B76CF4400685B7B /* Helpers */,
 				046C46BE2B722EDF005C04D1 /* weelzApp.swift */,
 				046C46C02B722EDF005C04D1 /* ContentView.swift */,
 				046C46C22B722EDF005C04D1 /* Item.swift */,
@@ -280,13 +302,15 @@
 				044975762B74DEC300685B7B /* CarRow.swift in Sources */,
 				0449757A2B74FB7900685B7B /* ViewTitle.swift in Sources */,
 				044975722B74D36C00685B7B /* CarTitleRow.swift in Sources */,
-				044975802B7500FE00685B7B /* ImageTaker.swift in Sources */,
+				044975802B7500FE00685B7B /* ImageTakerView.swift in Sources */,
 				044975692B73964900685B7B /* SlideButton.swift in Sources */,
 				044975652B737C7900685B7B /* OTPView.swift in Sources */,
+				0449758A2B76D3CE00685B7B /* SignUpViewModel.swift in Sources */,
 				0449756E2B74C01E00685B7B /* TabBar.swift in Sources */,
 				0449755B2B736FF300685B7B /* OTPField.swift in Sources */,
 				044975482B7234E600685B7B /* Color.swift in Sources */,
 				0449757C2B74FCC400685B7B /* SignUpView.swift in Sources */,
+				044975882B76CF5300685B7B /* UiState.swift in Sources */,
 				044975702B74CED600685B7B /* OwnerRow.swift in Sources */,
 				044975822B750E3400685B7B /* WelcomeView.swift in Sources */,
 				044975532B7364F000685B7B /* PhoneView.swift in Sources */,
