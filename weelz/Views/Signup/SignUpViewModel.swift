@@ -14,11 +14,19 @@ extension SignUpView {
         @Published var passportUiState: UiState<String> = .idle
         
         func signup() {
-            guard case .success = driversLicenseUiState, case .success = passportUiState else {
+            guard !disabled else {
                 return
             }
 
             // perform api call signup
+        }
+        
+        var disabled: Bool {
+            if case .success = driversLicenseUiState, case .success = passportUiState {
+                return false
+            } else {
+                return true
+            }
         }
     }
 }

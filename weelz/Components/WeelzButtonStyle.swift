@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct WeelzButtonStyle: ButtonStyle {
+    
+    @State private var disabled: Bool
+    
+    init(disabled: Bool = false) {
+        self.disabled = disabled
+    }
+    
     func makeBody(configuration: Configuration) -> some View {
         HStack{
             Spacer()
@@ -16,9 +23,10 @@ struct WeelzButtonStyle: ButtonStyle {
             Spacer()
         }
         .frame(height: 68)
-        .background(.wzRed)
+        .background(disabled ? .gray : .wzRed)
         .foregroundStyle(.white)
         .clipShape(RoundedRectangle(cornerRadius: 8))
+        .disabled(disabled)
     }
 }
 

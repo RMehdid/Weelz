@@ -35,7 +35,7 @@ struct SignUpView: View {
             Button("Continue") {
                 viewModel.signup()
             }
-            .buttonStyle(WeelzButtonStyle())
+            .buttonStyle(WeelzButtonStyle(disabled: viewModel.disabled))
         }
         .padding()
         .background(Color.wzPrimary)
