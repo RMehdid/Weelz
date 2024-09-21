@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var vm = ViewModel()
     var body: some View {
         VStack(spacing: 16){
             HStack {
@@ -21,6 +23,18 @@ struct HomeView: View {
                 HStack{
                     ForEach(Category.allCases) {
                         CategoryItem($0)
+                    }
+                }
+            }
+            switch vm.carsUiState {
+            case .idle, .empty, .loading, .failure:
+                EmptyView()
+            case .success(let cars):
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack {
+                        ForEach(cars) { car in
+                            CarCard(car: car, isLiked: false)
+                        }
                     }
                 }
             }

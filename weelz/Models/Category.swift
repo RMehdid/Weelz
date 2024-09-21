@@ -8,13 +8,13 @@
 import Foundation
 
 enum Category: String, CaseIterable, Identifiable {
+    case nearby = "Nearby"
     case quick = "Quick"
     case budget = "Budget"
     case luxury = "Luxury"
     case suv = "SUV"
     case wedding = "Wedding"
     case vintage = "Vintage"
-    case nearby = "Nearby"
     
     var id: UUID { UUID() }
 }

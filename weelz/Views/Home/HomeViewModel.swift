@@ -9,6 +9,14 @@ import Foundation
 
 extension HomeView {
     @MainActor class ViewModel: ObservableObject {
+        @Published var carsUiState: UiState<[Car]> = .idle
         
+        init() {
+            self.getCars()
+        }
+        
+        func getCars(category: Category? = nil) {
+            self.carsUiState = .success([.sample])
+        }
     }
 }

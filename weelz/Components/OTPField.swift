@@ -32,7 +32,7 @@ public struct OtpField: View {
                 HStack {
                     Spacer()
                     OTPField()
-                        .onChange(of: model.otpFields) { newValue in
+                        .onChange(of: model.otpFields) { _, newValue in
                             if model.handleAutoFill(value: newValue, codeLength: codeLength) {
                                 activeField = nil
                             } else {

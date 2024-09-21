@@ -9,7 +9,14 @@ import SwiftUI
 
 struct CarCard: View {
     
+    let car: Car
+    
     @State private var isLiked: Bool = false
+    
+    init(car: Car, isLiked: Bool) {
+        self.car = car
+        self.isLiked = isLiked
+    }
     
     var body: some View {
         VStack {
@@ -50,6 +57,6 @@ struct CarCard: View {
 }
 
 #Preview {
-    CarCard()
+    CarCard(car: .sample, isLiked: false)
         .padding()
 }
